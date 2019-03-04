@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3455" started-at="2019-03-04T07:53:58Z" finished-at="2019-03-04T07:54:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3455" started-at="2019-03-04T07:53:58Z" finished-at="2019-03-04T07:54:01Z">
+      <class name="org.pages.tatoc.PopupWindows">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.pages.tatoc.PopupWindows@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="2149" started-at="2019-03-04T07:53:58Z" finished-at="2019-03-04T07:54:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="directlyProceed()[pri:0, instance:org.pages.tatoc.PopupWindows@1e88b3c]" name="directlyProceed" duration-ms="179" started-at="2019-03-04T07:54:00Z" finished-at="2019-03-04T07:54:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- directlyProceed -->
+        <test-method status="PASS" signature="launchPopupWindow()[pri:0, instance:org.pages.tatoc.PopupWindows@1e88b3c]" name="launchPopupWindow" duration-ms="185" started-at="2019-03-04T07:54:00Z" finished-at="2019-03-04T07:54:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPopupWindow -->
+        <test-method status="PASS" signature="launchPopupWithoutValue()[pri:0, instance:org.pages.tatoc.PopupWindows@1e88b3c]" name="launchPopupWithoutValue" duration-ms="420" started-at="2019-03-04T07:54:00Z" finished-at="2019-03-04T07:54:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPopupWithoutValue -->
+        <test-method status="PASS" signature="popUpWindowWithValue()[pri:0, instance:org.pages.tatoc.PopupWindows@1e88b3c]" name="popUpWindowWithValue" duration-ms="422" started-at="2019-03-04T07:54:01Z" finished-at="2019-03-04T07:54:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- popUpWindowWithValue -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.pages.tatoc.PopupWindows@1e88b3c]" name="afterMethod" is-config="true" duration-ms="70" started-at="2019-03-04T07:54:01Z" finished-at="2019-03-04T07:54:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- org.pages.tatoc.PopupWindows -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
