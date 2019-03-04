@@ -12,7 +12,7 @@ import junit.framework.Assert;
 
 public class CookieHandling {
 	public WebDriver driver;
-    public String baseUrl = "http://10.0.1.86/tatoc/basic/cookie#";
+    public String baseUrl = "http://10.0.1.86/tatoc/basic/cookie#"; // url of the tatoc page
     String driverPath = "/home/qainfotech/Downloads/chromedriver_linux64/chromedriver";
  
     @BeforeTest
