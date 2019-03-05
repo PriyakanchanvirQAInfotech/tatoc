@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -31,9 +32,9 @@ public class DragAndDrop {
         WebElement To=driver.findElement(By.id("dropbox"));	
     	Actions act=new Actions(driver);					
         act.dragAndDrop(From, To).build().perform();
-        driver.findElement(By.xpath("//a[contains(text(),'Proceed')]")).click();
+        driver.findElement(By.cssSelector(".page a[onclick='gonext();']")).click();
         Assert.assertEquals( driver.getTitle(), "Windows - Basic Course - T.A.T.O.C");
-        System.out.println("Dragbox and drop it in the box and click on proceed and it will open the next page.");
+        Reporter.log("Dragbox and drop it in the box and click on proceed and it will open the next page.", true);
         driver.navigate().back();
 	}
 	
@@ -44,9 +45,9 @@ public class DragAndDrop {
         WebElement To=driver.findElement(By.id("dragbox"));	
     	Actions act=new Actions(driver);					
         act.dragAndDrop(From, To).build().perform();
-        driver.findElement(By.xpath("//a[contains(text(),'Proceed')]")).click();
+        driver.findElement(By.cssSelector(".page a[onclick='gonext();']")).click();
         Assert.assertEquals( driver.getTitle(), "Error - T.A.T.O.C");
-        System.out.println("Dragbox and drop it outside the box and click on proceed and it will open an error page.");
+        Reporter.log("Dragbox and drop it outside the box and click on proceed and it will open an error page.", true);
 	}
 
     @AfterTest

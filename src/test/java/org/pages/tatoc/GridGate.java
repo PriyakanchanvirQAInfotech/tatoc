@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -31,7 +32,8 @@ public class GridGate {
 	public void opensNextPage() {
 		driver.findElement(By.className("greenbox")).click();
 		Assert.assertEquals("Frame Dungeon - Basic Course - T.A.T.O.C", driver.getTitle(), "It will open an error page.");
-		System.out.println("When we click on the green box it proceeds to the next page.");
+		//System.out.println("When we click on the green box it proceeds to the next page.");
+		Reporter.log("When we click on the green box it proceeds to the next page.", true);
 		driver.navigate().back();
 	}
 	
@@ -39,7 +41,8 @@ public class GridGate {
 	public void proceedToErrorPage() {
 		driver.findElement(By.className("redbox")).click();
 		Assert.assertEquals("Error - T.A.T.O.C", driver.getTitle(), "It will proceed to the next Page");
-		System.out.println("When we click on the red box it proceeds to an error page.");
+//		System.out.println("When we click on the red box it proceeds to an error page.");
+		Reporter.log("When we click on the red box it proceeds to an error page.", true);
 		driver.navigate().back();
 	}
 	
