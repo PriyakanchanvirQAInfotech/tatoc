@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.pages.tatoc.FrameDungeon">
+      <class name="org.pages.tatoc.DragAndDrop">
         <methods>
+          <include name="dragBoxProceedsToErrorPage"/>
+          <include name="dragBoxOpensNextPage"/>
           <include name="beforeMethod"/>
-          <include name="proceedAfterRepaint"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- org.pages.tatoc.FrameDungeon -->
+      </class> <!-- org.pages.tatoc.DragAndDrop -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,12 @@
 package org.pages.tatoc;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,16 +19,25 @@ import org.testng.annotations.Test;
 
 public class DragAndDrop {
 
-	public WebDriver driver ;
-    public String baseUrl = "http://10.0.1.86/tatoc/basic/drag#";
-    String driverPath = "/home/qainfotech/Downloads/chromedriver_linux64/chromedriver";
- 
-    @BeforeTest
-	public void beforeMethod() {
-		System.setProperty("webdriver.chrome.driver", driverPath);
-		driver= new ChromeDriver(); // created an instance of a chrome driver
+	String driverPath;
+	public WebDriver driver;
+	public String baseUrl;
+	JavascriptExecutor js;
+	Properties property;
+
+	@BeforeTest
+	public void beforeMethod() throws IOException {
+		property = new Properties();
+		File f = new File("property//tatoc.properties");
+		FileReader reader = new FileReader(f);
+		property.load(reader);
+		System.out.println("inside property file");
+		driverPath = property.getProperty( "driverpath");
+    	 driver= new ChromeDriver(); // created an instance of a chrome driver
 		 driver.manage().window().maximize();// maximize the window size
+		 baseUrl = property.getProperty("drag_url");
 		 driver.get(baseUrl);
+		 js = (JavascriptExecutor) driver;   
 	}
     
     @Test
@@ -32,7 +47,9 @@ public class DragAndDrop {
         WebElement To=driver.findElement(By.id("dropbox"));	
     	Actions act=new Actions(driver);					
         act.dragAndDrop(From, To).build().perform();
-        driver.findElement(By.cssSelector(".page a[onclick='gonext();']")).click();
+        
+        js.executeScript("document.querySelector(\"a[onclick='gonext();']\")" + ".click()");
+       // driver.findElement(By.cssSelector(".page a[onclick='gonext();']")).click();
         Assert.assertEquals( driver.getTitle(), "Windows - Basic Course - T.A.T.O.C");
         Reporter.log("Dragbox and drop it in the box and click on proceed and it will open the next page.", true);
         driver.navigate().back();
@@ -45,7 +62,7 @@ public class DragAndDrop {
         WebElement To=driver.findElement(By.id("dragbox"));	
     	Actions act=new Actions(driver);					
         act.dragAndDrop(From, To).build().perform();
-        driver.findElement(By.cssSelector(".page a[onclick='gonext();']")).click();
+        js.executeScript("document.querySelector(\"a[onclick='gonext();']\")" + ".click()");
         Assert.assertEquals( driver.getTitle(), "Error - T.A.T.O.C");
         Reporter.log("Dragbox and drop it outside the box and click on proceed and it will open an error page.", true);
 	}

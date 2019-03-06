@@ -1,6 +1,12 @@
 package org.pages.tatoc;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,16 +18,25 @@ import org.testng.annotations.Test;
 
 public class FrameDungeon {
 
-	public WebDriver driver ;
-    public String baseUrl = "http://10.0.1.86/tatoc/basic/frame/dungeon";
-    String driverPath = "/home/qainfotech/Downloads/chromedriver_linux64/chromedriver";
- 
-    @BeforeTest
-	public void beforeMethod() {
-		System.setProperty("webdriver.chrome.driver", driverPath);
-		driver= new ChromeDriver(); // created an instance of a chrome driver
+	String driverPath;
+	public WebDriver driver;
+	public String baseUrl;
+	JavascriptExecutor js;
+	Properties property;
+
+	@BeforeTest
+	public void beforeMethod() throws IOException {
+		property = new Properties();
+		File f = new File("property//tatoc.properties");
+		FileReader reader = new FileReader(f);
+		property.load(reader);
+		System.out.println("inside property file");
+		driverPath = property.getProperty( "driverpath");
+    	 driver= new ChromeDriver(); // created an instance of a chrome driver
 		 driver.manage().window().maximize();// maximize the window size
+		 baseUrl = property.getProperty("frame_url");
 		 driver.get(baseUrl);
+		 js = (JavascriptExecutor) driver;
 	}
     
     @Test
@@ -32,8 +47,8 @@ public class FrameDungeon {
     	driver.switchTo().frame("child");
     	WebElement Box2 = driver.findElement(By.xpath("//div[@id= 'answer' and text() ='Box 2']"));
     	driver.switchTo().parentFrame();
-    	driver.findElement(By.xpath("//a[ 'answer' and text()= 'Proceed']")).click();
-    	if(Box1.equals(Box2)) {
+    	js.executeScript("document.querySelector(\"a[onclick='gonext();']\")" + ".click()");
+    	if(Box1==(Box2)) {
 			Assert.assertEquals(driver.getTitle(), "Drag - Basic Course - T.A.T.O.C");
 			Reporter.log("When we click on proceed if the colour of the box1 and box2 are same then it proceeds to the next page.", true);
 		}
@@ -53,14 +68,14 @@ public class FrameDungeon {
     	WebElement Box2 = driver.findElement(By.xpath("//div[@id= 'answer' and text() ='Box 2']"));
     	driver.switchTo().parentFrame();
 		
-    	if(Box1!=(Box2)) {
-    		driver.findElement(By.xpath("//a[ 'answer' and text()= 'Repaint Box 2']")).click();
-    		Reporter.log("Colour of box1 and box2 are not same then we click on 'Repaint Box 2' to recolour it.", true);
+    	if(!(Box1.equals(Box2))) {
+    		js.executeScript("document.querySelector(\"a[onclick='reloadChildFrame();']\")" + ".click()");
+        	Reporter.log("Colour of box1 and box2 are not same then we click on 'Repaint Box 2' to recolour it.", true);
 		}
 		else
 		{
-			driver.findElement(By.xpath("//a[ 'answer' and text()= 'Proceed']")).click();
-			Assert.assertEquals(driver.getTitle(), "Drag - Basic Course - T.A.T.O.C");
+			js.executeScript("document.querySelector(\"a[onclick='gonext();']\")" + ".click()");
+	    	Assert.assertEquals(driver.getTitle(), "Drag - Basic Course - T.A.T.O.C");
 			Reporter.log("Colour of box1 and box2 are same then we click on 'Proceed' to open the next page.", true);
 		}
     	driver.navigate().back();
@@ -75,9 +90,9 @@ public class FrameDungeon {
     	driver.switchTo().parentFrame();
 		
     	if(Box1!=(Box2)) {
-    		driver.findElement(By.xpath("//a[ 'answer' and text()= 'Repaint Box 2']")).click();
-    		driver.findElement(By.xpath("//a[ 'answer' and text()= 'Proceed']")).click();
-    		if(Box1.equals(Box2)) {
+    		js.executeScript("document.querySelector(\"a[onclick='reloadChildFrame();']\")" + ".click()");
+        	js.executeScript("document.querySelector(\"a[onclick='gonext();']\")" + ".click()");
+        	if(Box1.equals(Box2)) {
     			Assert.assertEquals(driver.getTitle(), "Drag - Basic Course - T.A.T.O.C");
     			Reporter.log("After repainting the second box if both the boxes have same colour then proceed to the next page.", true);
     		}
