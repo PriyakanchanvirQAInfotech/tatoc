@@ -4,16 +4,12 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -21,7 +17,7 @@ import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 
-public class CookieHandling {
+public class CookieHandlingTest {
 	String driverPath;
 	public WebDriver driver;
 	public String baseUrl;
@@ -36,11 +32,11 @@ public class CookieHandling {
 		property.load(reader);
 		System.out.println("inside property file");
 		driverPath = property.getProperty( "driverpath");
-    	 driver= new ChromeDriver(); // created an instance of a chrome driver
-		 driver.manage().window().maximize();// maximize the window size
-		 baseUrl = property.getProperty("cookie_url");
-		 driver.get(baseUrl);
-		 js=  (JavascriptExecutor) driver;
+        driver= new ChromeDriver(); // created an instance of a chrome driver
+		driver.manage().window().maximize();// maximize the window size
+		baseUrl = property.getProperty("cookie_url");
+		driver.get(baseUrl);
+		js=  (JavascriptExecutor) driver;
 	}
    
     @Test

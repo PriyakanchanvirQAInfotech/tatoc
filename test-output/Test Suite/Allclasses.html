@@ -1,0 +1,679 @@
+<html>
+<head>
+<title>TestNG:  Allclasses</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Allclasses</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/16</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 08 11:23:50 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2406 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.beforeMethod()'><b>beforeMethod</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace106810454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace106810454'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.DragAndDrop@e25b2fe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.beforeMethod()'><b>beforeMethod</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.FrameDungeon@77cd7a0</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.beforeMethod()'><b>beforeMethod</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.GridGate@1a968a59</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.beforeMethod()'><b>beforeMethod</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.PopupWindows@4667ae56</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.afterMethod()'><b>afterMethod</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.CookieHandling@204f30ec</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.afterMethod()'><b>afterMethod</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.DragAndDrop@e25b2fe</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.afterMethod()'><b>afterMethod</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.FrameDungeon@77cd7a0</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.afterMethod()'><b>afterMethod</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.GridGate@1a968a59</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.afterMethod()'><b>afterMethod</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.PopupWindows@4667ae56</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.pages.tatoc.FrameDungeon.boxColourCheck()'><b>boxColourCheck</b><br>Test class: org.pages.tatoc.FrameDungeon</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1262467105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1262467105'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.FrameDungeon@77cd7a0</td></tr>
+<tr>
+<td title='org.pages.tatoc.FrameDungeon.clickRepaintBox2()'><b>clickRepaintBox2</b><br>Test class: org.pages.tatoc.FrameDungeon</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1945405190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1945405190'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.FrameDungeon@77cd7a0</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.cookieDirectProceed()'><b>cookieDirectProceed</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1008085650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1008085650'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.CookieHandling@204f30ec</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.cookieGenerateTokenAndProceed()'><b>cookieGenerateTokenAndProceed</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1483409226", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1483409226'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.CookieHandling@204f30ec</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.cookieSetProperly()'><b>cookieSetProperly</b><br>Test class: org.pages.tatoc.CookieHandling</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1394685968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1394685968'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.CookieHandling@204f30ec</td></tr>
+<tr>
+<td title='org.pages.tatoc.PopupWindows.directlyProceed()'><b>directlyProceed</b><br>Test class: org.pages.tatoc.PopupWindows</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1722585549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1722585549'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.PopupWindows@4667ae56</td></tr>
+<tr>
+<td title='org.pages.tatoc.DragAndDrop.dragBoxOpensNextPage()'><b>dragBoxOpensNextPage</b><br>Test class: org.pages.tatoc.DragAndDrop</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2020626745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2020626745'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.DragAndDrop@e25b2fe</td></tr>
+<tr>
+<td title='org.pages.tatoc.DragAndDrop.dragBoxProceedsToErrorPage()'><b>dragBoxProceedsToErrorPage</b><br>Test class: org.pages.tatoc.DragAndDrop</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2015451178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2015451178'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.DragAndDrop@e25b2fe</td></tr>
+<tr>
+<td title='org.pages.tatoc.PopupWindows.launchPopupWindow()'><b>launchPopupWindow</b><br>Test class: org.pages.tatoc.PopupWindows</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace354350865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace354350865'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.PopupWindows@4667ae56</td></tr>
+<tr>
+<td title='org.pages.tatoc.PopupWindows.launchPopupWithoutValue()'><b>launchPopupWithoutValue</b><br>Test class: org.pages.tatoc.PopupWindows</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1201663365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1201663365'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.PopupWindows@4667ae56</td></tr>
+<tr>
+<td title='org.pages.tatoc.GridGate.opensNextPage()'><b>opensNextPage</b><br>Test class: org.pages.tatoc.GridGate</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace370981794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace370981794'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.GridGate@1a968a59</td></tr>
+<tr>
+<td title='org.pages.tatoc.PopupWindows.popUpWindowWithValue()'><b>popUpWindowWithValue</b><br>Test class: org.pages.tatoc.PopupWindows</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace727431743", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace727431743'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.PopupWindows@4667ae56</td></tr>
+<tr>
+<td title='org.pages.tatoc.FrameDungeon.proceedAfterRepaint()'><b>proceedAfterRepaint</b><br>Test class: org.pages.tatoc.FrameDungeon</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace84427013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace84427013'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.FrameDungeon@77cd7a0</td></tr>
+<tr>
+<td title='org.pages.tatoc.GridGate.proceedToErrorPage()'><b>proceedToErrorPage</b><br>Test class: org.pages.tatoc.GridGate</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace386444156", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace386444156'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.GridGate@1a968a59</td></tr>
+<tr>
+<td title='org.pages.tatoc.FrameDungeon.testmethod()'><b>testmethod</b><br>Test class: org.pages.tatoc.FrameDungeon</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2009234281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2009234281'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.FrameDungeon@77cd7a0</td></tr>
+<tr>
+<td title='org.pages.tatoc.FrameDungeon.testmethod()'><b>testmethod</b><br>Test class: org.pages.tatoc.FrameDungeon</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1214801186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1214801186'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeTest on method beforeMethod but has not been marked @Optional or defined
+in /home/qainfotech/eclipse-workspace/tatoc/testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>org.pages.tatoc.FrameDungeon@77cd7a0</td></tr>
+</table><p>
+</body>
+</html>

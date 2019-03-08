@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>TestNG:  Tatoc Page Testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Tatoc Page Testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 07 14:42:47 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>16 seconds (16455 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.pages.tatoc.FrameDungeon.boxColourCheck()'><b>boxColourCheck</b><br>Test class: org.pages.tatoc.FrameDungeon<br/>
+<a href="#Output-391506011" onClick='toggleBox("Output-391506011", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-391506011" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-391506011">
+When we click on proceed if the colour of box1 and box2 are not same then it proceeds to an error page.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.FrameDungeon@685cb137</td></tr>
+<tr>
+<td title='org.pages.tatoc.FrameDungeon.clickRepaintBox2()'><b>clickRepaintBox2</b><br>Test class: org.pages.tatoc.FrameDungeon<br/>
+<a href="#Output-1543518287" onClick='toggleBox("Output-1543518287", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1543518287" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1543518287">
+Colour of box1 and box2 are not same then we click on 'Repaint Box 2' to recolour it.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.FrameDungeon@685cb137</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.cookieDirectProceed()'><b>cookieDirectProceed</b><br>Test class: org.pages.tatoc.CookieHandling<br/>
+<a href="#Output-1628551735" onClick='toggleBox("Output-1628551735", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1628551735" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1628551735">
+When directly click on proceed and it will open an error page.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.CookieHandling@6a41eaa2</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.cookieGenerateTokenAndProceed()'><b>cookieGenerateTokenAndProceed</b><br>Test class: org.pages.tatoc.CookieHandling<br/>
+<a href="#Output-371397455" onClick='toggleBox("Output-371397455", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-371397455" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-371397455">
+Generate token and click on proceed and it will open an error page.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.CookieHandling@6a41eaa2</td></tr>
+<tr>
+<td title='org.pages.tatoc.CookieHandling.cookieSetProperly()'><b>cookieSetProperly</b><br>Test class: org.pages.tatoc.CookieHandling<br/>
+<a href="#Output-691863815" onClick='toggleBox("Output-691863815", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-691863815" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-691863815">
+Generate token, copy token value and create cookie then click on proceed and it will proceed to next page.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.CookieHandling@6a41eaa2</td></tr>
+<tr>
+<td title='org.pages.tatoc.PopupWindows.directlyProceed()'><b>directlyProceed</b><br>Test class: org.pages.tatoc.PopupWindows<br/>
+<a href="#Output-1320388319" onClick='toggleBox("Output-1320388319", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1320388319" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1320388319">
+Click on proceed directly and it will open an error page.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.PopupWindows@604ed9f0</td></tr>
+<tr>
+<td title='org.pages.tatoc.DragAndDrop.dragBoxOpensNextPage()'><b>dragBoxOpensNextPage</b><br>Test class: org.pages.tatoc.DragAndDrop<br/>
+<a href="#Output-93054696" onClick='toggleBox("Output-93054696", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-93054696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-93054696">
+Dragbox and drop it in the box and click on proceed and it will open the next page.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.DragAndDrop@91161c7</td></tr>
+<tr>
+<td title='org.pages.tatoc.DragAndDrop.dragBoxProceedsToErrorPage()'><b>dragBoxProceedsToErrorPage</b><br>Test class: org.pages.tatoc.DragAndDrop<br/>
+<a href="#Output-1631119258" onClick='toggleBox("Output-1631119258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1631119258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1631119258">
+Dragbox and drop it outside the box and click on proceed and it will open an error page.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.DragAndDrop@91161c7</td></tr>
+<tr>
+<td title='org.pages.tatoc.PopupWindows.launchPopupWindow()'><b>launchPopupWindow</b><br>Test class: org.pages.tatoc.PopupWindows<br/>
+<a href="#Output-1789110533" onClick='toggleBox("Output-1789110533", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1789110533" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1789110533">
+Click on Launch Popup Window to open the popup window.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.PopupWindows@604ed9f0</td></tr>
+<tr>
+<td title='org.pages.tatoc.PopupWindows.launchPopupWithoutValue()'><b>launchPopupWithoutValue</b><br>Test class: org.pages.tatoc.PopupWindows<br/>
+<a href="#Output-840514538" onClick='toggleBox("Output-840514538", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-840514538" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-840514538">
+Click on Launch Popup Window to open the popup window and click on submit without putting any value it will open an error page.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.PopupWindows@604ed9f0</td></tr>
+<tr>
+<td title='org.pages.tatoc.GridGate.opensNextPage()'><b>opensNextPage</b><br>Test class: org.pages.tatoc.GridGate</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.GridGate@6a4f787b</td></tr>
+<tr>
+<td title='org.pages.tatoc.PopupWindows.popUpWindowWithValue()'><b>popUpWindowWithValue</b><br>Test class: org.pages.tatoc.PopupWindows<br/>
+<a href="#Output-1600594643" onClick='toggleBox("Output-1600594643", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1600594643" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1600594643">
+Click on Launch Popup Window to open the popup window, then put the name in the text field and click on submit button, it will return back to the main page and then click on proceed it will open next page.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.PopupWindows@604ed9f0</td></tr>
+<tr>
+<td title='org.pages.tatoc.FrameDungeon.proceedAfterRepaint()'><b>proceedAfterRepaint</b><br>Test class: org.pages.tatoc.FrameDungeon<br/>
+<a href="#Output-1244867001" onClick='toggleBox("Output-1244867001", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1244867001" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1244867001">
+Colour of box1 and box2 are not same after repainting second box then after clicking on 'Proceed' it proceeds to an error page.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.FrameDungeon@685cb137</td></tr>
+<tr>
+<td title='org.pages.tatoc.GridGate.proceedToErrorPage()'><b>proceedToErrorPage</b><br>Test class: org.pages.tatoc.GridGate</td>
+<td></td>
+<td>0</td>
+<td>org.pages.tatoc.GridGate@6a4f787b</td></tr>
+</table><p>
+</body>
+</html>

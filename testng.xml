@@ -1,0 +1,9 @@
+<suite name="Test Suite" thread-count="2" parallel="tests"	verbose="1">
+	<test name="Uisng_firefox_browser">
+		<parameter name="url" value="http://10.0.1.86/tatoc/basic/drag#" />
+		<parameter name="path" value="/home/qainfotech/geckodriver-v0.24.0-linux64/geckodriver" />
+		<packages>
+			<package name="org.pages.tatoc" />
+		</packages>
+	</test>
+</suite>	

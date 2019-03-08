@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Test Suite]" parallel="tests">
+  <test thread-count="2" name="Allclasses(failed)" parallel="tests">
+    <classes>
+      <class name="org.pages.tatoc.DragAndDrop">
+        <methods>
+          <include name="dragBoxProceedsToErrorPage"/>
+          <include name="dragBoxOpensNextPage"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- org.pages.tatoc.DragAndDrop -->
+      <class name="org.pages.tatoc.PopupWindows">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="launchPopupWindow"/>
+          <include name="popUpWindowWithValue"/>
+          <include name="directlyProceed"/>
+          <include name="launchPopupWithoutValue"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- org.pages.tatoc.PopupWindows -->
+      <class name="org.pages.tatoc.GridGate">
+        <methods>
+          <include name="opensNextPage"/>
+          <include name="proceedToErrorPage"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- org.pages.tatoc.GridGate -->
+      <class name="org.pages.tatoc.FrameDungeon">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="boxColourCheck"/>
+          <include name="proceedAfterRepaint"/>
+          <include name="testmethod"/>
+          <include name="afterMethod"/>
+          <include name="clickRepaintBox2"/>
+        </methods>
+      </class> <!-- org.pages.tatoc.FrameDungeon -->
+      <class name="org.pages.tatoc.CookieHandling">
+        <methods>
+          <include name="cookieSetProperly"/>
+          <include name="cookieGenerateTokenAndProceed"/>
+          <include name="afterMethod"/>
+          <include name="cookieDirectProceed"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- org.pages.tatoc.CookieHandling -->
+    </classes>
+  </test> <!-- Allclasses(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

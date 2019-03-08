@@ -14,5 +14,8 @@ import org.testng.annotations.Test;
 
 public class AppTest 
 {
-	
+	@Test
+	public void simpleTest() {
+		System.out.println("Baisc test case");
+	}
 }

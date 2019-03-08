@@ -14,6 +14,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class FrameDungeon {
@@ -32,12 +33,27 @@ public class FrameDungeon {
 		property.load(reader);
 		System.out.println("inside property file");
 		driverPath = property.getProperty( "driverpath");
-    	 driver= new ChromeDriver(); // created an instance of a chrome driver
-		 driver.manage().window().maximize();// maximize the window size
-		 baseUrl = property.getProperty("frame_url");
-		 driver.get(baseUrl);
-		 js = (JavascriptExecutor) driver;
+    	driver= new ChromeDriver(); // created an instance of a chrome driver
+		driver.manage().window().maximize();// maximize the window size
+		baseUrl = property.getProperty("frame_url");
+		driver.get(baseUrl);
+		js = (JavascriptExecutor) driver;
 	}
+	
+	@DataProvider(name = "Data")
+	public static Object[][] getData() {
+		Object[][] array;
+		array= new Object[][] {
+			{"Priya", "4709"}, {"Shivangi", "4708"}
+		};
+				
+		return array;
+	}	
+	@Test(dataProvider = "Data")
+	public void testmethod(String name, String id) {
+		System.out.println("Data provided is:-" + name + id);
+	}
+    
     
     @Test
 	public void boxColourCheck() {
@@ -112,6 +128,6 @@ public class FrameDungeon {
     
     @AfterTest
 	 public void afterMethod() {
-	     driver.quit();
-	 }
+	    driver.quit();
+    }
 }

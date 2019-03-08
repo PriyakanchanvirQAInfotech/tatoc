@@ -11,41 +11,41 @@
       <![CDATA[Generate token, copy token value and create cookie then click on proceed and it will proceed to next page.]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2778" started-at="2019-03-06T13:25:59Z" finished-at="2019-03-06T13:26:02Z">
+  <suite name="Default suite" duration-ms="2640" started-at="2019-03-08T11:22:44Z" finished-at="2019-03-08T11:22:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2778" started-at="2019-03-06T13:25:59Z" finished-at="2019-03-06T13:26:02Z">
-      <class name="org.pages.tatoc.CookieHandling">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.pages.tatoc.CookieHandling@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="2314" started-at="2019-03-06T13:25:59Z" finished-at="2019-03-06T13:26:01Z">
+    <test name="Default test" duration-ms="2640" started-at="2019-03-08T11:22:44Z" finished-at="2019-03-08T11:22:47Z">
+      <class name="org.pages.tatoc.CookieHandlingTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="2188" started-at="2019-03-08T11:22:44Z" finished-at="2019-03-08T11:22:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="cookieDirectProceed()[pri:0, instance:org.pages.tatoc.CookieHandling@1e88b3c]" name="cookieDirectProceed" duration-ms="78" started-at="2019-03-06T13:26:02Z" finished-at="2019-03-06T13:26:02Z">
+        <test-method status="PASS" signature="cookieDirectProceed()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="cookieDirectProceed" duration-ms="102" started-at="2019-03-08T11:22:46Z" finished-at="2019-03-08T11:22:46Z">
           <reporter-output>
             <line>
               <![CDATA[When directly click on proceed and it will open an error page.]]>
             </line>
           </reporter-output>
         </test-method> <!-- cookieDirectProceed -->
-        <test-method status="PASS" signature="cookieGenerateTokenAndProceed()[pri:0, instance:org.pages.tatoc.CookieHandling@1e88b3c]" name="cookieGenerateTokenAndProceed" duration-ms="127" started-at="2019-03-06T13:26:02Z" finished-at="2019-03-06T13:26:02Z">
+        <test-method status="PASS" signature="cookieGenerateTokenAndProceed()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="cookieGenerateTokenAndProceed" duration-ms="117" started-at="2019-03-08T11:22:46Z" finished-at="2019-03-08T11:22:46Z">
           <reporter-output>
             <line>
               <![CDATA[Generate token and click on proceed and it will open an error page.]]>
             </line>
           </reporter-output>
         </test-method> <!-- cookieGenerateTokenAndProceed -->
-        <test-method status="PASS" signature="cookieSetProperly()[pri:0, instance:org.pages.tatoc.CookieHandling@1e88b3c]" name="cookieSetProperly" duration-ms="148" started-at="2019-03-06T13:26:02Z" finished-at="2019-03-06T13:26:02Z">
+        <test-method status="PASS" signature="cookieSetProperly()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="cookieSetProperly" duration-ms="126" started-at="2019-03-08T11:22:46Z" finished-at="2019-03-08T11:22:46Z">
           <reporter-output>
             <line>
               <![CDATA[Generate token, copy token value and create cookie then click on proceed and it will proceed to next page.]]>
             </line>
           </reporter-output>
         </test-method> <!-- cookieSetProperly -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.pages.tatoc.CookieHandling@1e88b3c]" name="afterMethod" is-config="true" duration-ms="70" started-at="2019-03-06T13:26:02Z" finished-at="2019-03-06T13:26:02Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="77" started-at="2019-03-08T11:22:46Z" finished-at="2019-03-08T11:22:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- org.pages.tatoc.CookieHandling -->
+      </class> <!-- org.pages.tatoc.CookieHandlingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

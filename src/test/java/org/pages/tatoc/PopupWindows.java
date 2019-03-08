@@ -1,7 +1,6 @@
 package org.pages.tatoc;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -13,7 +12,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -34,9 +32,9 @@ public class PopupWindows {
 		property.load(reader);
 		System.out.println("inside property file");
 		driverPath = property.getProperty( "driverpath");
-    	 driver= new ChromeDriver(); // created an instance of a chrome driver
-		 driver.manage().window().maximize();// maximize the window size
-		 baseUrl = property.getProperty("pop_url");
+    	driver= new ChromeDriver(); // created an instance of a chrome driver
+		driver.manage().window().maximize();// maximize the window size
+		baseUrl = property.getProperty("pop_url");
 		driver.get(baseUrl);
 		js = (JavascriptExecutor) driver;
 	}
@@ -71,9 +69,7 @@ public class PopupWindows {
 		driver.switchTo().window(parentHandle);
 		js.executeScript("document.querySelector(\"a[onclick='gonext();']\")" + ".click()");
 		Assert.assertEquals(driver.getTitle(), "Error - T.A.T.O.C");
-		Reporter.log(
-				"Click on Launch Popup Window to open the popup window and click on submit without putting any value it will open an error page.",
-				true);
+		Reporter.log("Click on Launch Popup Window to open the popup window and click on submit without putting any value it will open an error page.", true);
 		js.executeScript("window.history.back();");
 	}
 
@@ -89,9 +85,7 @@ public class PopupWindows {
 		driver.switchTo().window(parentHandle);
 		js.executeScript("document.querySelector(\"a[onclick='gonext();']\")" + ".click()");
 		Assert.assertEquals(driver.getTitle(), "Cookie Handling - Basic Course - T.A.T.O.C");
-		Reporter.log(
-				"Click on Launch Popup Window to open the popup window, then put the name in the text field and click on submit button, it will return back to the main page and then click on proceed it will open next page.",
-				true);
+		Reporter.log("Click on Launch Popup Window to open the popup window, then put the name in the text field and click on submit button, it will return back to the main page and then click on proceed it will open next page.", true);
 	}
 
 	@AfterTest
