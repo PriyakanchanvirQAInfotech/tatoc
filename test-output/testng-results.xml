@@ -11,37 +11,37 @@
       <![CDATA[Generate token, copy token value and create cookie then click on proceed and it will proceed to next page.]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2640" started-at="2019-03-08T11:22:44Z" finished-at="2019-03-08T11:22:47Z">
+  <suite name="Default suite" duration-ms="2889" started-at="2019-03-18T08:59:05Z" finished-at="2019-03-18T08:59:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2640" started-at="2019-03-08T11:22:44Z" finished-at="2019-03-08T11:22:47Z">
+    <test name="Default test" duration-ms="2889" started-at="2019-03-18T08:59:05Z" finished-at="2019-03-18T08:59:08Z">
       <class name="org.pages.tatoc.CookieHandlingTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="2188" started-at="2019-03-08T11:22:44Z" finished-at="2019-03-08T11:22:46Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="2459" started-at="2019-03-18T08:59:05Z" finished-at="2019-03-18T08:59:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="cookieDirectProceed()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="cookieDirectProceed" duration-ms="102" started-at="2019-03-08T11:22:46Z" finished-at="2019-03-08T11:22:46Z">
+        <test-method status="PASS" signature="cookieDirectProceed()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="cookieDirectProceed" duration-ms="89" started-at="2019-03-18T08:59:08Z" finished-at="2019-03-18T08:59:08Z">
           <reporter-output>
             <line>
               <![CDATA[When directly click on proceed and it will open an error page.]]>
             </line>
           </reporter-output>
         </test-method> <!-- cookieDirectProceed -->
-        <test-method status="PASS" signature="cookieGenerateTokenAndProceed()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="cookieGenerateTokenAndProceed" duration-ms="117" started-at="2019-03-08T11:22:46Z" finished-at="2019-03-08T11:22:46Z">
+        <test-method status="PASS" signature="cookieGenerateTokenAndProceed()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="cookieGenerateTokenAndProceed" duration-ms="70" started-at="2019-03-18T08:59:08Z" finished-at="2019-03-18T08:59:08Z">
           <reporter-output>
             <line>
               <![CDATA[Generate token and click on proceed and it will open an error page.]]>
             </line>
           </reporter-output>
         </test-method> <!-- cookieGenerateTokenAndProceed -->
-        <test-method status="PASS" signature="cookieSetProperly()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="cookieSetProperly" duration-ms="126" started-at="2019-03-08T11:22:46Z" finished-at="2019-03-08T11:22:46Z">
+        <test-method status="PASS" signature="cookieSetProperly()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="cookieSetProperly" duration-ms="157" started-at="2019-03-18T08:59:08Z" finished-at="2019-03-18T08:59:08Z">
           <reporter-output>
             <line>
               <![CDATA[Generate token, copy token value and create cookie then click on proceed and it will proceed to next page.]]>
             </line>
           </reporter-output>
         </test-method> <!-- cookieSetProperly -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="77" started-at="2019-03-08T11:22:46Z" finished-at="2019-03-08T11:22:47Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.pages.tatoc.CookieHandlingTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="77" started-at="2019-03-18T08:59:08Z" finished-at="2019-03-18T08:59:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

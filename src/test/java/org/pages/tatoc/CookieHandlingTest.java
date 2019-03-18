@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 
 public class CookieHandlingTest {
-	String driverPath;
+	String driverPath = "/home/qainfotech/chromedriver_linux64/chromedriver";
 	public WebDriver driver;
 	public String baseUrl;
 	JavascriptExecutor js;
